@@ -5,13 +5,12 @@ import { AppService } from './app.service.js';
 import { PrismaService } from './prisma/prisma.service.js';
 import { PrismaModule } from './prisma/prisma.module.js';
 import { UsersModule } from './users/users.module.js';
+import { PatientsModule } from './patients/patients.module.js'; // <-- 1. Yeh import yahan add karo
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
 @Module({
   imports: [
-    // Distributed tracing, auto-correlated logs, request/job metrics, error
-    // telemetry, alarms, and more — out of the box. Sign up at https://observe.nestjs.com
     ObserveModule.forRoot({
       appKey: 'YOUR_APP_KEY',
       appSecret: 'YOUR_APP_SECRET',
@@ -19,6 +18,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
     }),
     PrismaModule,
     UsersModule,
+    PatientsModule, // <-- 2. Yeh yahan imports array mein add karo
   ],
   controllers: [AppController],
   providers: [AppService, PrismaService],

@@ -23,3 +23,44 @@ model User {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
+
+// src/prisma/schema.prisma (User model ke neechay add karein)
+
+model Patient {
+  id               String   @id @default(uuid())
+  medicalId        String   @unique // Hospital ka custom ID, e.g., PT-12345
+  firstName        String
+  lastName         String
+  cnic             String   @unique // CNIC unique hoga taake duplicate entry na ho
+  phone            String
+  dob              DateTime
+  gender           String
+  bloodGroup       String?
+  emergencyContact String?
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+
+  // Relations (Ek patient ki multiple history aur vitals ho sakte hain)
+  medicalHistories MedicalHistory[]
+  vitals           Vitals[]
+}
+
+model MedicalHistory {
+  id        String   @id @default(uuid())
+  patientId String
+  patient   Patient  @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  allergies String[] // Array of strings (PostgreSQL support karta hai)
+  notes     String?
+  visitDate DateTime @default(now())
+  createdAt DateTime @default(now())
+}
+
+model Vitals {
+  id            String   @id @default(uuid())
+  patientId     String
+  patient       Patient  @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  bloodPressure String? // e.g., "120/80"
+  heartRate     Int? // e.g., 72 (BPM)
+  temperature   Float? // e.g., 98.6 (Fahrenheit)
+  recordedAt    DateTime @default(now())
+}
