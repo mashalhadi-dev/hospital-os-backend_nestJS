@@ -1,0 +1,261 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+enum Role {
+  ADMIN
+  DOCTOR
+  NURSE
+  RECEPTIONIST
+  PATIENT
+}
+
+enum Gender {
+  MALE
+  FEMALE
+  OTHER
+}
+
+enum AppointmentStatus {
+  PENDING
+  IN_QUEUE
+  CONFIRMED
+  COMPLETED
+  CANCELLED
+}
+
+enum BillingStatus {
+  PENDING
+  PAID
+  CANCELLED
+}
+
+model User {
+  id         String   @id @default(uuid())
+  email      String   @unique
+  password   String
+  name       String
+  role       Role     @default(PATIENT)
+  phone      String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  hospitalId String
+  hospital   Hospital @relation(fields: [hospitalId], references: [id], onDelete: Restrict)
+
+  // All Role Profiles
+  doctorProfile             Doctor?
+  nurseProfile              Nurse?
+  receptionistProfile       Receptionist?
+  patientProfile            Patient?
+  recordedVitals            VitalSign[]                @relation("RecordedVitals")
+  medicationAdministrations MedicationAdministration[] @relation("AdministeredMedications")
+
+  @@index([hospitalId])
+}
+
+model Patient {
+  id             String   @id @default(uuid())
+  userId         String?  @unique
+  user           User?    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  name           String
+  age            Int
+  gender         Gender
+  phone          String
+  address        String?
+  medicalHistory String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  hospitalId     String
+  hospital       Hospital @relation(fields: [hospitalId], references: [id], onDelete: Restrict)
+
+  appointments  Appointment[]
+  prescriptions Prescription[]
+  billings      Billing[]
+  vitalSigns    VitalSign[]
+
+  @@index([hospitalId])
+}
+
+model Doctor {
+  id             String   @id @default(uuid())
+  userId         String   @unique
+  user           User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  specialization String
+  department     String
+  availability   String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  hospitalId     String
+  hospital       Hospital @relation(fields: [hospitalId], references: [id], onDelete: Restrict)
+
+  appointments  Appointment[]
+  prescriptions Prescription[]
+
+  @@index([hospitalId])
+}
+
+model Nurse {
+  id         String   @id @default(uuid())
+  userId     String   @unique
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  department String
+  shift      String? // e.g., Morning, Night
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  hospitalId String
+  hospital   Hospital @relation(fields: [hospitalId], references: [id], onDelete: Restrict)
+
+  @@index([hospitalId])
+}
+
+model Receptionist {
+  id         String   @id @default(uuid())
+  userId     String   @unique
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deskNumber String?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+}
+
+model Appointment {
+  id              String            @id @default(uuid())
+  patientId       String
+  patient         Patient           @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  doctorId        String
+  doctor          Doctor            @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+  appointmentDate DateTime
+  status          AppointmentStatus @default(PENDING)
+  symptoms        String?
+  notes           String?
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  hospitalId      String
+  hospital        Hospital          @relation(fields: [hospitalId], references: [id], onDelete: Restrict)
+
+  @@index([hospitalId])
+}
+
+model Medicine {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  description String?
+  price       Float
+  stock       Int      @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  hospitalId  String
+  hospital    Hospital @relation(fields: [hospitalId], references: [id], onDelete: Restrict)
+
+  prescriptionItems PrescriptionItem[]
+  billingItems      BillingItem[]
+
+  @@index([hospitalId])
+}
+
+model Prescription {
+  id           String   @id @default(uuid())
+  patientId    String
+  patient      Patient  @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  doctorId     String
+  doctor       Doctor   @relation(fields: [doctorId], references: [id], onDelete: Cascade)
+  diagnosis    String
+  instructions String?
+  createdAt    DateTime @default(now())
+
+  items PrescriptionItem[]
+}
+
+model PrescriptionItem {
+  id              String                     @id @default(uuid())
+  prescriptionId  String
+  prescription    Prescription               @relation(fields: [prescriptionId], references: [id], onDelete: Cascade)
+  medicineId      String
+  medicine        Medicine                   @relation(fields: [medicineId], references: [id], onDelete: Cascade)
+  dosage          String // e.g., 1-0-1 (Morning-Afternoon-Night)
+  quantity        Int
+  administrations MedicationAdministration[]
+}
+
+model VitalSign {
+  id                     String   @id @default(uuid())
+  patientId              String
+  patient                Patient  @relation(fields: [patientId], references: [id], onDelete: Restrict)
+  nurseUserId            String
+  nurse                  User     @relation("RecordedVitals", fields: [nurseUserId], references: [id], onDelete: Restrict)
+  systolicBloodPressure  Int
+  diastolicBloodPressure Int
+  oxygenSaturation       Int
+  heartRate              Int
+  temperatureCelsius     Float
+  bloodGlucoseMgDl       Float
+  recordedAt             DateTime @default(now())
+
+  @@index([patientId, recordedAt])
+  @@index([nurseUserId, recordedAt])
+}
+
+model MedicationAdministration {
+  id                 String           @id @default(uuid())
+  prescriptionItemId String
+  prescriptionItem   PrescriptionItem @relation(fields: [prescriptionItemId], references: [id], onDelete: Restrict)
+  nurseUserId        String
+  nurse              User             @relation("AdministeredMedications", fields: [nurseUserId], references: [id], onDelete: Restrict)
+  notes              String?
+  administeredAt     DateTime         @default(now())
+
+  @@index([prescriptionItemId, administeredAt])
+  @@index([nurseUserId, administeredAt])
+}
+
+model Billing {
+  id          String        @id @default(uuid())
+  patientId   String
+  patient     Patient       @relation(fields: [patientId], references: [id], onDelete: Cascade)
+  totalAmount Float
+  paidAmount  Float         @default(0.0)
+  status      BillingStatus @default(PENDING)
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+  hospitalId  String
+  hospital    Hospital      @relation(fields: [hospitalId], references: [id], onDelete: Restrict)
+
+  items BillingItem[]
+
+  @@index([hospitalId])
+}
+
+model Hospital {
+  id        String   @id @default(uuid())
+  name      String
+  slug      String   @unique
+  address   String?
+  phone     String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  users        User[]
+  patients     Patient[]
+  doctors      Doctor[]
+  nurses       Nurse[]
+  appointments Appointment[]
+  billings     Billing[]
+  medicines    Medicine[]
+}
+
+model BillingItem {
+  id          String    @id @default(uuid())
+  billingId   String
+  billing     Billing   @relation(fields: [billingId], references: [id], onDelete: Cascade)
+  medicineId  String?
+  medicine    Medicine? @relation(fields: [medicineId], references: [id], onDelete: SetNull)
+  description String // Medicine name ya consultation fee waghera
+  quantity    Int
+  unitPrice   Float
+  totalPrice  Float
+}
