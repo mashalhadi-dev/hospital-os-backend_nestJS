@@ -1,0 +1,824 @@
+{
+  ".vscode/extensions.json": {
+    "mtime": 1792220992.7111878,
+    "seen": 1792227606.9817257,
+    "ast_hash": "c58201f20bf1cdce044629d17f5da34d",
+    "semantic_hash": "c58201f20bf1cdce044629d17f5da34d"
+  },
+  "healthnode-backend/.oxlintrc.json": {
+    "mtime": 1791294940.9243128,
+    "seen": 1792227606.9817312,
+    "ast_hash": "f40a087d3f25d466bc915d1dffb2d587",
+    "semantic_hash": "f40a087d3f25d466bc915d1dffb2d587"
+  },
+  "healthnode-backend/nest-cli.json": {
+    "mtime": 1791294940.9253242,
+    "seen": 1792227606.9817338,
+    "ast_hash": "fa439650fa28a1a7aa8c2b6d81c8cc20",
+    "semantic_hash": "fa439650fa28a1a7aa8c2b6d81c8cc20"
+  },
+  "healthnode-backend/package.json": {
+    "mtime": 1792221263.2267933,
+    "seen": 1792227606.9817355,
+    "ast_hash": "0e77916923dcc3388b3d29b8f666732f",
+    "semantic_hash": "0e77916923dcc3388b3d29b8f666732f"
+  },
+  "healthnode-backend/prisma.config.ts": {
+    "mtime": 1791295573.1104078,
+    "seen": 1792227606.9817371,
+    "ast_hash": "123af06397b84f545074d11ef8c9f2cd",
+    "semantic_hash": "123af06397b84f545074d11ef8c9f2cd"
+  },
+  "healthnode-backend/prisma/seed.ts": {
+    "mtime": 1792222880.8454976,
+    "seen": 1792227606.9817388,
+    "ast_hash": "d300b3caefd1911d1e977aa6f60328fc",
+    "semantic_hash": "d300b3caefd1911d1e977aa6f60328fc"
+  },
+  "healthnode-backend/scripts/e2e-roles-test.mjs": {
+    "mtime": 1792180487.5094447,
+    "seen": 1792227606.9817402,
+    "ast_hash": "d84d530eb3e5970e5a72d66abf67a401",
+    "semantic_hash": "d84d530eb3e5970e5a72d66abf67a401"
+  },
+  "healthnode-backend/src/ai/ai.controller.spec.ts": {
+    "mtime": 1792180416.1833181,
+    "seen": 1792227606.981742,
+    "ast_hash": "b5acf921221f4e1600e0e6456c9b1373",
+    "semantic_hash": "b5acf921221f4e1600e0e6456c9b1373"
+  },
+  "healthnode-backend/src/ai/ai.controller.ts": {
+    "mtime": 1792180189.7554362,
+    "seen": 1792227606.9817433,
+    "ast_hash": "207fe7a7c1498726a47505140573bb09",
+    "semantic_hash": "207fe7a7c1498726a47505140573bb09"
+  },
+  "healthnode-backend/src/ai/ai.module.ts": {
+    "mtime": 1791463892.706315,
+    "seen": 1792227606.981745,
+    "ast_hash": "72f074b43d8d132ade54c55076285498",
+    "semantic_hash": "72f074b43d8d132ade54c55076285498"
+  },
+  "healthnode-backend/src/ai/ai.service.ts": {
+    "mtime": 1792180189.8111587,
+    "seen": 1792227606.9817464,
+    "ast_hash": "aa9c4a3c274c8c75ed3fa405534f9c44",
+    "semantic_hash": "aa9c4a3c274c8c75ed3fa405534f9c44"
+  },
+  "healthnode-backend/src/ai/dto/ask-ai.dto.ts": {
+    "mtime": 1791301891.5345647,
+    "seen": 1792227606.9817483,
+    "ast_hash": "68d4c252ee3734b48adcf5b0f64d70b4",
+    "semantic_hash": "68d4c252ee3734b48adcf5b0f64d70b4"
+  },
+  "healthnode-backend/src/ai/dto/ask-receptionist-ai.dto.spec.ts": {
+    "mtime": 1792180332.4241686,
+    "seen": 1792227606.9817498,
+    "ast_hash": "f6fde158a06fed338a43d424b0658e99",
+    "semantic_hash": "f6fde158a06fed338a43d424b0658e99"
+  },
+  "healthnode-backend/src/ai/dto/ask-receptionist-ai.dto.ts": {
+    "mtime": 1792180189.7838817,
+    "seen": 1792227606.9817512,
+    "ast_hash": "3d040c9d41d89c882ccc40b845362e31",
+    "semantic_hash": "3d040c9d41d89c882ccc40b845362e31"
+  },
+  "healthnode-backend/src/ai/dto/receptionist-ai-task.enum.ts": {
+    "mtime": 1792180189.7718995,
+    "seen": 1792227606.9817526,
+    "ast_hash": "7d3de22d7f9ac451736bd01725c60c98",
+    "semantic_hash": "7d3de22d7f9ac451736bd01725c60c98"
+  },
+  "healthnode-backend/src/ai/rag/rag.service.spec.ts": {
+    "mtime": 1792180332.439705,
+    "seen": 1792227606.981754,
+    "ast_hash": "e494455ea451a0d7d7d1c1497be66ab5",
+    "semantic_hash": "e494455ea451a0d7d7d1c1497be66ab5"
+  },
+  "healthnode-backend/src/ai/rag/rag.service.ts": {
+    "mtime": 1792180189.7966206,
+    "seen": 1792227606.9817557,
+    "ast_hash": "62413bda94cb6f37894e03063d864ec8",
+    "semantic_hash": "62413bda94cb6f37894e03063d864ec8"
+  },
+  "healthnode-backend/src/app.controller.spec.ts": {
+    "mtime": 1791294940.927524,
+    "seen": 1792227606.9817572,
+    "ast_hash": "d74b5b0f51853609a9536958f69ae0c3",
+    "semantic_hash": "d74b5b0f51853609a9536958f69ae0c3"
+  },
+  "healthnode-backend/src/app.controller.ts": {
+    "mtime": 1791294940.9265237,
+    "seen": 1792227606.981759,
+    "ast_hash": "5ca326b9b8dd2a4141b78d405205c762",
+    "semantic_hash": "5ca326b9b8dd2a4141b78d405205c762"
+  },
+  "healthnode-backend/src/app.module.ts": {
+    "mtime": 1792172071.6169896,
+    "seen": 1792227606.9817605,
+    "ast_hash": "6e524413006d470438de8507c8e2f921",
+    "semantic_hash": "6e524413006d470438de8507c8e2f921"
+  },
+  "healthnode-backend/src/app.service.ts": {
+    "mtime": 1791294940.927524,
+    "seen": 1792227606.981762,
+    "ast_hash": "08e985e831bca61f6be89c5c2ecef2fa",
+    "semantic_hash": "08e985e831bca61f6be89c5c2ecef2fa"
+  },
+  "healthnode-backend/src/appointments/appointments.controller.ts": {
+    "mtime": 1792223141.6904814,
+    "seen": 1792227606.9817636,
+    "ast_hash": "924fb7ebd24bbfd49bf5c3ee25d52f73",
+    "semantic_hash": "924fb7ebd24bbfd49bf5c3ee25d52f73"
+  },
+  "healthnode-backend/src/appointments/appointments.gateway.ts": {
+    "mtime": 1791464498.536988,
+    "seen": 1792227606.9817653,
+    "ast_hash": "b485a68c702ed4d0020cb00e66dee8b8",
+    "semantic_hash": "b485a68c702ed4d0020cb00e66dee8b8"
+  },
+  "healthnode-backend/src/appointments/appointments.module.ts": {
+    "mtime": 1791463892.6974852,
+    "seen": 1792227606.981767,
+    "ast_hash": "72c081bad4d9c5c26e244ab92ad4e65b",
+    "semantic_hash": "72c081bad4d9c5c26e244ab92ad4e65b"
+  },
+  "healthnode-backend/src/appointments/appointments.service.spec.ts": {
+    "mtime": 1791464215.9874885,
+    "seen": 1792227606.9817684,
+    "ast_hash": "a12b1502bd9b3b9e802dc79e2747a40f",
+    "semantic_hash": "a12b1502bd9b3b9e802dc79e2747a40f"
+  },
+  "healthnode-backend/src/appointments/appointments.service.ts": {
+    "mtime": 1792223179.822552,
+    "seen": 1792227606.9817705,
+    "ast_hash": "673c9879a8268b68cf436d7a423923cc",
+    "semantic_hash": "673c9879a8268b68cf436d7a423923cc"
+  },
+  "healthnode-backend/src/appointments/dto/create-appointment.dto.ts": {
+    "mtime": 1791463850.0077133,
+    "seen": 1792227606.981772,
+    "ast_hash": "206761f91d73760ef06beefc32251434",
+    "semantic_hash": "206761f91d73760ef06beefc32251434"
+  },
+  "healthnode-backend/src/appointments/dto/update-status.dto.ts": {
+    "mtime": 1791299354.9375532,
+    "seen": 1792227606.9817736,
+    "ast_hash": "a6f61981a0a404653d9241582ff1158f",
+    "semantic_hash": "a6f61981a0a404653d9241582ff1158f"
+  },
+  "healthnode-backend/src/auth/auth.controller.ts": {
+    "mtime": 1792172988.5967305,
+    "seen": 1792227606.981775,
+    "ast_hash": "3cf11b8041fa7a661dba1aad1b44e2cc",
+    "semantic_hash": "3cf11b8041fa7a661dba1aad1b44e2cc"
+  },
+  "healthnode-backend/src/auth/auth.module.ts": {
+    "mtime": 1792172071.7240565,
+    "seen": 1792227606.9817767,
+    "ast_hash": "47a53ef5ac94a3d88bcbb8d2be235b72",
+    "semantic_hash": "47a53ef5ac94a3d88bcbb8d2be235b72"
+  },
+  "healthnode-backend/src/auth/auth.service.spec.ts": {
+    "mtime": 1792173380.8288822,
+    "seen": 1792227606.9817781,
+    "ast_hash": "d216454cffd36ca9dc52c6611892d5d2",
+    "semantic_hash": "d216454cffd36ca9dc52c6611892d5d2"
+  },
+  "healthnode-backend/src/auth/auth.service.ts": {
+    "mtime": 1792225953.599008,
+    "seen": 1792227606.9817798,
+    "ast_hash": "eba560598230e4861c09d3899124ef7f",
+    "semantic_hash": "eba560598230e4861c09d3899124ef7f"
+  },
+  "healthnode-backend/src/auth/bcrypt.d.ts": {
+    "mtime": 1791298478.6540012,
+    "seen": 1792227606.9817815,
+    "ast_hash": "6a5582cc1978d4c0e0b83caa1c62231b",
+    "semantic_hash": "6a5582cc1978d4c0e0b83caa1c62231b"
+  },
+  "healthnode-backend/src/auth/dto/login.dto.ts": {
+    "mtime": 1791298478.6479912,
+    "seen": 1792227606.9817832,
+    "ast_hash": "c136b28fb93cdd4f68d7f8c6a186bc6c",
+    "semantic_hash": "c136b28fb93cdd4f68d7f8c6a186bc6c"
+  },
+  "healthnode-backend/src/auth/dto/register.dto.ts": {
+    "mtime": 1791464020.2622774,
+    "seen": 1792227606.9817846,
+    "ast_hash": "4ff21ae0e4d917fad6ba5111659e1d71",
+    "semantic_hash": "4ff21ae0e4d917fad6ba5111659e1d71"
+  },
+  "healthnode-backend/src/billing/billing.controller.ts": {
+    "mtime": 1792174159.8371937,
+    "seen": 1792227606.981786,
+    "ast_hash": "96f9480d383067c3f9a868ec0a8c8834",
+    "semantic_hash": "96f9480d383067c3f9a868ec0a8c8834"
+  },
+  "healthnode-backend/src/billing/billing.module.ts": {
+    "mtime": 1791463892.7145567,
+    "seen": 1792227606.9817877,
+    "ast_hash": "c192616e96a5cc97ed98a0d0c8f817ea",
+    "semantic_hash": "c192616e96a5cc97ed98a0d0c8f817ea"
+  },
+  "healthnode-backend/src/billing/billing.service.ts": {
+    "mtime": 1792174159.8498971,
+    "seen": 1792227606.981789,
+    "ast_hash": "ca989a236dd389522c018f8758946e54",
+    "semantic_hash": "ca989a236dd389522c018f8758946e54"
+  },
+  "healthnode-backend/src/billing/dto/create-billing.dto.ts": {
+    "mtime": 1791464177.6553595,
+    "seen": 1792227606.9817908,
+    "ast_hash": "7821b3005bad4b7e09804abb603c9da6",
+    "semantic_hash": "7821b3005bad4b7e09804abb603c9da6"
+  },
+  "healthnode-backend/src/common/decorators/roles.decorator.ts": {
+    "mtime": 1791463734.399284,
+    "seen": 1792227606.9817924,
+    "ast_hash": "217678c3e20508c86de2679fbe769223",
+    "semantic_hash": "217678c3e20508c86de2679fbe769223"
+  },
+  "healthnode-backend/src/common/guards/jwt-auth.guard.ts": {
+    "mtime": 1791301890.5536244,
+    "seen": 1792227606.9817939,
+    "ast_hash": "642ac64b46e983cd96964b66197e9e21",
+    "semantic_hash": "642ac64b46e983cd96964b66197e9e21"
+  },
+  "healthnode-backend/src/common/guards/roles.guard.ts": {
+    "mtime": 1791463734.4108527,
+    "seen": 1792227606.9817953,
+    "ast_hash": "42f7dd6d74e9f2ecbab1fc4a0291be13",
+    "semantic_hash": "42f7dd6d74e9f2ecbab1fc4a0291be13"
+  },
+  "healthnode-backend/src/common/prisma.module.ts": {
+    "mtime": 1791299003.492595,
+    "seen": 1792227606.981797,
+    "ast_hash": "f9d412298d717281211e7cfe015ee395",
+    "semantic_hash": "f9d412298d717281211e7cfe015ee395"
+  },
+  "healthnode-backend/src/common/redis/redis.module.ts": {
+    "mtime": 1791300942.7007775,
+    "seen": 1792227606.981799,
+    "ast_hash": "166dcd539cd4cc6890af48de55551efc",
+    "semantic_hash": "166dcd539cd4cc6890af48de55551efc"
+  },
+  "healthnode-backend/src/common/redis/redis.service.ts": {
+    "mtime": 1792172071.6409934,
+    "seen": 1792227606.9818006,
+    "ast_hash": "744f9d8c965031721f0b21c4f86bc0e8",
+    "semantic_hash": "744f9d8c965031721f0b21c4f86bc0e8"
+  },
+  "healthnode-backend/src/config/environment.validation.ts": {
+    "mtime": 1792173178.6552112,
+    "seen": 1792227606.981802,
+    "ast_hash": "0b8c5437884a806873063209e928a866",
+    "semantic_hash": "0b8c5437884a806873063209e928a866"
+  },
+  "healthnode-backend/src/doctors/doctors.controller.ts": {
+    "mtime": 1792174997.1881561,
+    "seen": 1792227606.981804,
+    "ast_hash": "d385cdf4cfb59fb5411813f6a4d455d9",
+    "semantic_hash": "d385cdf4cfb59fb5411813f6a4d455d9"
+  },
+  "healthnode-backend/src/doctors/doctors.module.ts": {
+    "mtime": 1791463892.681518,
+    "seen": 1792227606.9818053,
+    "ast_hash": "b35aded23fa70d0232341c39c87ae68a",
+    "semantic_hash": "b35aded23fa70d0232341c39c87ae68a"
+  },
+  "healthnode-backend/src/doctors/doctors.service.ts": {
+    "mtime": 1792174997.2029223,
+    "seen": 1792227606.9818068,
+    "ast_hash": "b58e8010c13454a81414817dfb8ec22d",
+    "semantic_hash": "b58e8010c13454a81414817dfb8ec22d"
+  },
+  "healthnode-backend/src/doctors/dto/create-doctor.dto.ts": {
+    "mtime": 1791299037.605309,
+    "seen": 1792227606.9818084,
+    "ast_hash": "12221d59eab17a60d9b736264592c410",
+    "semantic_hash": "12221d59eab17a60d9b736264592c410"
+  },
+  "healthnode-backend/src/doctors/dto/update-doctor.dto.ts": {
+    "mtime": 1791299037.6162143,
+    "seen": 1792227606.9818099,
+    "ast_hash": "ebad231ffbacbc859cad7a940f153e9d",
+    "semantic_hash": "ebad231ffbacbc859cad7a940f153e9d"
+  },
+  "healthnode-backend/src/main.ts": {
+    "mtime": 1791464031.671232,
+    "seen": 1792227606.9818118,
+    "ast_hash": "26061c93aeb8ee2cadbd0939d64eb9b7",
+    "semantic_hash": "26061c93aeb8ee2cadbd0939d64eb9b7"
+  },
+  "healthnode-backend/src/medicines/dto/medicine.dto.ts": {
+    "mtime": 1791464177.647391,
+    "seen": 1792227606.9818137,
+    "ast_hash": "bd06f399671bfd81ad4050c42e5d3b83",
+    "semantic_hash": "bd06f399671bfd81ad4050c42e5d3b83"
+  },
+  "healthnode-backend/src/medicines/dto/prescription.dto.ts": {
+    "mtime": 1791464054.0616143,
+    "seen": 1792227606.9818153,
+    "ast_hash": "c65fbb397ccd703262b61d2d302dbf0b",
+    "semantic_hash": "c65fbb397ccd703262b61d2d302dbf0b"
+  },
+  "healthnode-backend/src/medicines/medicines.controller.ts": {
+    "mtime": 1791464054.0839207,
+    "seen": 1792227606.9818175,
+    "ast_hash": "ecf6cbdb016d7e3a4182d79220d3c115",
+    "semantic_hash": "ecf6cbdb016d7e3a4182d79220d3c115"
+  },
+  "healthnode-backend/src/medicines/medicines.module.ts": {
+    "mtime": 1791463892.739329,
+    "seen": 1792227606.9818196,
+    "ast_hash": "4d961ea34eeffc595488e435cd11f4cb",
+    "semantic_hash": "4d961ea34eeffc595488e435cd11f4cb"
+  },
+  "healthnode-backend/src/medicines/medicines.service.ts": {
+    "mtime": 1792175054.6080208,
+    "seen": 1792227606.9818215,
+    "ast_hash": "034aa8988aad5fc3a20c1b3af9b25cc0",
+    "semantic_hash": "034aa8988aad5fc3a20c1b3af9b25cc0"
+  },
+  "healthnode-backend/src/nurses/dto/create-medication-administration.dto.ts": {
+    "mtime": 1792174659.6934898,
+    "seen": 1792227606.9818232,
+    "ast_hash": "b113fcc92fbf166da83db5817da17ff8",
+    "semantic_hash": "b113fcc92fbf166da83db5817da17ff8"
+  },
+  "healthnode-backend/src/nurses/dto/create-vital-sign.dto.ts": {
+    "mtime": 1792174659.6778815,
+    "seen": 1792227606.981825,
+    "ast_hash": "09846e234dc750bf95cc65f8919107ae",
+    "semantic_hash": "09846e234dc750bf95cc65f8919107ae"
+  },
+  "healthnode-backend/src/nurses/dto/nurse.dto.ts": {
+    "mtime": 1791463780.0205765,
+    "seen": 1792227606.9818268,
+    "ast_hash": "ddda258101833427ecbabd8e04bf4fc4",
+    "semantic_hash": "ddda258101833427ecbabd8e04bf4fc4"
+  },
+  "healthnode-backend/src/nurses/nurses.controller.ts": {
+    "mtime": 1792223121.7647953,
+    "seen": 1792227606.9818285,
+    "ast_hash": "6e1606920a8b0fa5b1d3c0db7efc8339",
+    "semantic_hash": "6e1606920a8b0fa5b1d3c0db7efc8339"
+  },
+  "healthnode-backend/src/nurses/nurses.module.ts": {
+    "mtime": 1791463892.7243257,
+    "seen": 1792227606.98183,
+    "ast_hash": "91ab7bca6c8d89f223533893ad2972d4",
+    "semantic_hash": "91ab7bca6c8d89f223533893ad2972d4"
+  },
+  "healthnode-backend/src/nurses/nurses.service.ts": {
+    "mtime": 1792175129.4681382,
+    "seen": 1792227606.9818313,
+    "ast_hash": "2f5e9406ef9a4ef82981569418f78cae",
+    "semantic_hash": "2f5e9406ef9a4ef82981569418f78cae"
+  },
+  "healthnode-backend/src/patients/dto/create-patient.dto.ts": {
+    "mtime": 1791299037.5887241,
+    "seen": 1792227606.9818332,
+    "ast_hash": "5b13b1e696a60cf87ce7c160c7c05d55",
+    "semantic_hash": "5b13b1e696a60cf87ce7c160c7c05d55"
+  },
+  "healthnode-backend/src/patients/dto/update-patient.dto.ts": {
+    "mtime": 1791299037.5969872,
+    "seen": 1792227606.9818351,
+    "ast_hash": "a4f39b1a06dea1b26ba616905fe2a085",
+    "semantic_hash": "a4f39b1a06dea1b26ba616905fe2a085"
+  },
+  "healthnode-backend/src/patients/patients.controller.ts": {
+    "mtime": 1791464302.3127,
+    "seen": 1792227606.9818366,
+    "ast_hash": "9910504e144501b0515a4c2682c21e5d",
+    "semantic_hash": "9910504e144501b0515a4c2682c21e5d"
+  },
+  "healthnode-backend/src/patients/patients.module.ts": {
+    "mtime": 1791463892.6891925,
+    "seen": 1792227606.981838,
+    "ast_hash": "88c62fd6168b2ca205d54c77dbd81983",
+    "semantic_hash": "88c62fd6168b2ca205d54c77dbd81983"
+  },
+  "healthnode-backend/src/patients/patients.service.ts": {
+    "mtime": 1792175054.5821164,
+    "seen": 1792227606.9818397,
+    "ast_hash": "37881bd6503d9d20be89dd186e83619e",
+    "semantic_hash": "37881bd6503d9d20be89dd186e83619e"
+  },
+  "healthnode-backend/src/receptionists/dto/receptionist.dto.ts": {
+    "mtime": 1791463780.0519521,
+    "seen": 1792227606.9818416,
+    "ast_hash": "d5b94156c7832e5edf361b512a67480b",
+    "semantic_hash": "d5b94156c7832e5edf361b512a67480b"
+  },
+  "healthnode-backend/src/receptionists/receptionists.controller.ts": {
+    "mtime": 1791463780.070712,
+    "seen": 1792227606.9818432,
+    "ast_hash": "b46c257d687febbb93b2615ecbad0a62",
+    "semantic_hash": "b46c257d687febbb93b2615ecbad0a62"
+  },
+  "healthnode-backend/src/receptionists/receptionists.module.ts": {
+    "mtime": 1791463892.7315922,
+    "seen": 1792227606.9818447,
+    "ast_hash": "ffc9879a1f0426a419dbebda39e3b6c0",
+    "semantic_hash": "ffc9879a1f0426a419dbebda39e3b6c0"
+  },
+  "healthnode-backend/src/receptionists/receptionists.service.ts": {
+    "mtime": 1791464323.0993495,
+    "seen": 1792227606.9818463,
+    "ast_hash": "63980e817ff45c86c4ee485e43915798",
+    "semantic_hash": "63980e817ff45c86c4ee485e43915798"
+  },
+  "healthnode-backend/test/app.e2e-spec.ts": {
+    "mtime": 1791294940.927524,
+    "seen": 1792227606.9818482,
+    "ast_hash": "21ef7793d5c0317be24981ecc41a5c05",
+    "semantic_hash": "21ef7793d5c0317be24981ecc41a5c05"
+  },
+  "healthnode-backend/tsconfig.build.json": {
+    "mtime": 1791294940.9253242,
+    "seen": 1792227606.9818501,
+    "ast_hash": "579a0a489eb3f5e070976fb906003d98",
+    "semantic_hash": "579a0a489eb3f5e070976fb906003d98"
+  },
+  "healthnode-backend/tsconfig.json": {
+    "mtime": 1791294940.9253242,
+    "seen": 1792227606.9818516,
+    "ast_hash": "5f4659032e90884b616586b8684c582f",
+    "semantic_hash": "5f4659032e90884b616586b8684c582f"
+  },
+  "healthnode-backend/vitest.config.e2e.ts": {
+    "mtime": 1791294940.9253242,
+    "seen": 1792227606.9818532,
+    "ast_hash": "21f06fc1b35406b74a8d79d9b66f3c35",
+    "semantic_hash": "21f06fc1b35406b74a8d79d9b66f3c35"
+  },
+  "healthnode-backend/vitest.config.ts": {
+    "mtime": 1791294940.9265237,
+    "seen": 1792227606.981855,
+    "ast_hash": "eaececa76e6981b8ff922eedfb928dc0",
+    "semantic_hash": "eaececa76e6981b8ff922eedfb928dc0"
+  },
+  "healthnode-frontend/eslint.config.mjs": {
+    "mtime": 1791308268.2726922,
+    "seen": 1792227606.981857,
+    "ast_hash": "dfa1f5f6a7037bf39dc510f30b180002",
+    "semantic_hash": "dfa1f5f6a7037bf39dc510f30b180002"
+  },
+  "healthnode-frontend/next.config.ts": {
+    "mtime": 1791308268.3795955,
+    "seen": 1792227606.9818594,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "healthnode-frontend/package.json": {
+    "mtime": 1792226694.4356494,
+    "seen": 1792227606.9818609,
+    "ast_hash": "70d21846f6de87a446534ff26bd06bb7",
+    "semantic_hash": "70d21846f6de87a446534ff26bd06bb7"
+  },
+  "healthnode-frontend/postcss.config.mjs": {
+    "mtime": 1791308268.3029833,
+    "seen": 1792227606.9818623,
+    "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": "239f3ebf717465dc636818a1a619398d"
+  },
+  "healthnode-frontend/src/app/admin/page.tsx": {
+    "mtime": 1791406073.8800473,
+    "seen": 1792227606.981864,
+    "ast_hash": "9604b4cb9668edb6f0179d7530e74255",
+    "semantic_hash": "9604b4cb9668edb6f0179d7530e74255"
+  },
+  "healthnode-frontend/src/app/dashboard/page.tsx": {
+    "mtime": 1791406098.1492472,
+    "seen": 1792227606.9818654,
+    "ast_hash": "fa98808e3ddf4e0501c4331eaaf532bc",
+    "semantic_hash": "fa98808e3ddf4e0501c4331eaaf532bc"
+  },
+  "healthnode-frontend/src/app/doctor/page.tsx": {
+    "mtime": 1792173050.2064443,
+    "seen": 1792227606.981867,
+    "ast_hash": "6866eb5f328acd097868098a04c79f3c",
+    "semantic_hash": "6866eb5f328acd097868098a04c79f3c"
+  },
+  "healthnode-frontend/src/app/layout.tsx": {
+    "mtime": 1791461266.6075933,
+    "seen": 1792227606.9818685,
+    "ast_hash": "bef15b03817d623ccdde88d4704d58ca",
+    "semantic_hash": "bef15b03817d623ccdde88d4704d58ca"
+  },
+  "healthnode-frontend/src/app/login/page.tsx": {
+    "mtime": 1792173259.273533,
+    "seen": 1792227606.9818702,
+    "ast_hash": "130de6eb61d850fc7eb85fe83fc2ee94",
+    "semantic_hash": "130de6eb61d850fc7eb85fe83fc2ee94"
+  },
+  "healthnode-frontend/src/app/nurse/page.tsx": {
+    "mtime": 1792173050.2671738,
+    "seen": 1792227606.981874,
+    "ast_hash": "7baefeafae400204026dc5126ce6e448",
+    "semantic_hash": "7baefeafae400204026dc5126ce6e448"
+  },
+  "healthnode-frontend/src/app/page.tsx": {
+    "mtime": 1792225416.7599232,
+    "seen": 1792227606.9818757,
+    "ast_hash": "0fef25777590711e4896fdc7358ad417",
+    "semantic_hash": "0fef25777590711e4896fdc7358ad417"
+  },
+  "healthnode-frontend/src/app/patient/page.tsx": {
+    "mtime": 1792173050.3934102,
+    "seen": 1792227606.981877,
+    "ast_hash": "f35ef60a86f6264e15662a35eae92196",
+    "semantic_hash": "f35ef60a86f6264e15662a35eae92196"
+  },
+  "healthnode-frontend/src/app/receptionist/page.tsx": {
+    "mtime": 1792173050.3172944,
+    "seen": 1792227606.9818788,
+    "ast_hash": "fffebbdbed2abfd22bb06ed9ab11f8e0",
+    "semantic_hash": "fffebbdbed2abfd22bb06ed9ab11f8e0"
+  },
+  "healthnode-frontend/src/app/register/page.tsx": {
+    "mtime": 1792173277.4306052,
+    "seen": 1792227606.9818804,
+    "ast_hash": "147f1823c94be83982c230d7d9692215",
+    "semantic_hash": "147f1823c94be83982c230d7d9692215"
+  },
+  "healthnode-frontend/src/components/ai/AiCoPilotDrawer.tsx": {
+    "mtime": 1792180460.8958127,
+    "seen": 1792227606.9818816,
+    "ast_hash": "5ed8b88c9ba1c6d72368d1dae3ea5588",
+    "semantic_hash": "5ed8b88c9ba1c6d72368d1dae3ea5588"
+  },
+  "healthnode-frontend/src/components/dashboard/AdminDashboard.tsx": {
+    "mtime": 1792173259.5742903,
+    "seen": 1792227606.981883,
+    "ast_hash": "72c383e0a92556f13c121e3c6ae7d798",
+    "semantic_hash": "72c383e0a92556f13c121e3c6ae7d798"
+  },
+  "healthnode-frontend/src/components/dashboard/DoctorDashboard.tsx": {
+    "mtime": 1792223798.98928,
+    "seen": 1792227606.9818847,
+    "ast_hash": "b291e9893eb777cdb15b6706a0dc4724",
+    "semantic_hash": "b291e9893eb777cdb15b6706a0dc4724"
+  },
+  "healthnode-frontend/src/components/dashboard/NurseDashboard.tsx": {
+    "mtime": 1792224266.2786927,
+    "seen": 1792227606.9818861,
+    "ast_hash": "fc3363eae726c45f3fe1f510c41bfabb",
+    "semantic_hash": "fc3363eae726c45f3fe1f510c41bfabb"
+  },
+  "healthnode-frontend/src/components/dashboard/PatientDashboard.tsx": {
+    "mtime": 1792175537.794578,
+    "seen": 1792227606.9818876,
+    "ast_hash": "38daf5fb7bfbf6b8e0e2b29afaacc0ff",
+    "semantic_hash": "38daf5fb7bfbf6b8e0e2b29afaacc0ff"
+  },
+  "healthnode-frontend/src/components/dashboard/ReceptionistDashboard.tsx": {
+    "mtime": 1792225094.7249184,
+    "seen": 1792227606.9818892,
+    "ast_hash": "66cd5008c7cc4cdb97b438f20fdb9ac2",
+    "semantic_hash": "66cd5008c7cc4cdb97b438f20fdb9ac2"
+  },
+  "healthnode-frontend/src/components/layout/DashboardLayout.tsx": {
+    "mtime": 1792225417.336708,
+    "seen": 1792227606.981891,
+    "ast_hash": "29808d4cd1696145f107eda055d1ef35",
+    "semantic_hash": "29808d4cd1696145f107eda055d1ef35"
+  },
+  "healthnode-frontend/src/components/layout/ProtectedRoute.tsx": {
+    "mtime": 1792151852.8832312,
+    "seen": 1792227606.9818923,
+    "ast_hash": "3b10baa27138cbdd37568d9e75120676",
+    "semantic_hash": "3b10baa27138cbdd37568d9e75120676"
+  },
+  "healthnode-frontend/src/components/layout/index.ts": {
+    "mtime": 1791406069.4166,
+    "seen": 1792227606.9818938,
+    "ast_hash": "0bfe7b1fd95f3fb8d15fa2fae9a0688c",
+    "semantic_hash": "0bfe7b1fd95f3fb8d15fa2fae9a0688c"
+  },
+  "healthnode-frontend/src/components/providers/AppProviders.tsx": {
+    "mtime": 1791370246.7228074,
+    "seen": 1792227606.9818954,
+    "ast_hash": "a7865c19b0b0a626dd2e52ab4aed1608",
+    "semantic_hash": "a7865c19b0b0a626dd2e52ab4aed1608"
+  },
+  "healthnode-frontend/src/components/providers/ThemeProvider.tsx": {
+    "mtime": 1791370246.7233367,
+    "seen": 1792227606.9818966,
+    "ast_hash": "c746b420f340ec7791d840a936194676",
+    "semantic_hash": "c746b420f340ec7791d840a936194676"
+  },
+  "healthnode-frontend/src/components/ui/CanvasFrame.tsx": {
+    "mtime": 1791461266.614341,
+    "seen": 1792227606.9818983,
+    "ast_hash": "e7ef4b7e1a86f6b37da00d08c9ec62f5",
+    "semantic_hash": "e7ef4b7e1a86f6b37da00d08c9ec62f5"
+  },
+  "healthnode-frontend/src/components/ui/ConfirmDialog.tsx": {
+    "mtime": 1792222921.827616,
+    "seen": 1792227606.9818997,
+    "ast_hash": "b2e87a4286c446e079574c9eb36efd70",
+    "semantic_hash": "b2e87a4286c446e079574c9eb36efd70"
+  },
+  "healthnode-frontend/src/components/ui/FormField.tsx": {
+    "mtime": 1792222990.8495471,
+    "seen": 1792227606.9819016,
+    "ast_hash": "61a0a412ba258cf15da5d286e7da66c4",
+    "semantic_hash": "61a0a412ba258cf15da5d286e7da66c4"
+  },
+  "healthnode-frontend/src/components/ui/FrostedGlassCard.tsx": {
+    "mtime": 1791405184.6121638,
+    "seen": 1792227606.9819036,
+    "ast_hash": "b85d1a5c9ad59f90fbcd03dc0306a405",
+    "semantic_hash": "b85d1a5c9ad59f90fbcd03dc0306a405"
+  },
+  "healthnode-frontend/src/components/ui/LiquidGlassToggle.tsx": {
+    "mtime": 1791310185.9217954,
+    "seen": 1792227606.9819052,
+    "ast_hash": "daa125317e25d28b81c1499eea65d7ed",
+    "semantic_hash": "daa125317e25d28b81c1499eea65d7ed"
+  },
+  "healthnode-frontend/src/components/ui/Modal.tsx": {
+    "mtime": 1792222919.2297072,
+    "seen": 1792227606.9819067,
+    "ast_hash": "43086efb9363df45d932770afba35038",
+    "semantic_hash": "43086efb9363df45d932770afba35038"
+  },
+  "healthnode-frontend/src/components/ui/PillButton.tsx": {
+    "mtime": 1791405196.0291095,
+    "seen": 1792227606.9819083,
+    "ast_hash": "800d5d29a10e4e2e0d3cb07b2a0a03c8",
+    "semantic_hash": "800d5d29a10e4e2e0d3cb07b2a0a03c8"
+  },
+  "healthnode-frontend/src/components/ui/PillTag.tsx": {
+    "mtime": 1791405206.909611,
+    "seen": 1792227606.9819095,
+    "ast_hash": "406113ec1a734882039d7dff55b57f0b",
+    "semantic_hash": "406113ec1a734882039d7dff55b57f0b"
+  },
+  "healthnode-frontend/src/components/ui/Skeleton.tsx": {
+    "mtime": 1792223065.169944,
+    "seen": 1792227606.9819112,
+    "ast_hash": "c8a9b019467589f1f918ba7327eacf38",
+    "semantic_hash": "c8a9b019467589f1f918ba7327eacf38"
+  },
+  "healthnode-frontend/src/components/ui/SlotPicker.tsx": {
+    "mtime": 1792223678.8588111,
+    "seen": 1792227606.9819126,
+    "ast_hash": "57000102c6b1e63de438c0e312e1624c",
+    "semantic_hash": "57000102c6b1e63de438c0e312e1624c"
+  },
+  "healthnode-frontend/src/components/ui/ThemeSwitcher.tsx": {
+    "mtime": 1791370246.7238488,
+    "seen": 1792227606.9819145,
+    "ast_hash": "588481794786d05dd408550cd06c41c7",
+    "semantic_hash": "588481794786d05dd408550cd06c41c7"
+  },
+  "healthnode-frontend/src/components/ui/ToastContainer.tsx": {
+    "mtime": 1792223067.307192,
+    "seen": 1792227606.981916,
+    "ast_hash": "9a7dc831291a2e3a8e6adf15208550d8",
+    "semantic_hash": "9a7dc831291a2e3a8e6adf15208550d8"
+  },
+  "healthnode-frontend/src/components/ui/VitalBadge.tsx": {
+    "mtime": 1792222993.085179,
+    "seen": 1792227606.9819174,
+    "ast_hash": "88a759420a13979bd67fc29a1477569f",
+    "semantic_hash": "88a759420a13979bd67fc29a1477569f"
+  },
+  "healthnode-frontend/src/components/ui/index.ts": {
+    "mtime": 1792223062.9515328,
+    "seen": 1792227606.9819193,
+    "ast_hash": "de3264ba71c84957878bed9a5a34555e",
+    "semantic_hash": "de3264ba71c84957878bed9a5a34555e"
+  },
+  "healthnode-frontend/src/hooks/useApi.ts": {
+    "mtime": 1792224516.8573537,
+    "seen": 1792227606.9819207,
+    "ast_hash": "72e7a781745937356d92b5e7c707e723",
+    "semantic_hash": "72e7a781745937356d92b5e7c707e723"
+  },
+  "healthnode-frontend/src/lib/status.ts": {
+    "mtime": 1792222869.0140896,
+    "seen": 1792227606.9819224,
+    "ast_hash": "b2b933a5eabbf7b9230703e1cb5cd451",
+    "semantic_hash": "b2b933a5eabbf7b9230703e1cb5cd451"
+  },
+  "healthnode-frontend/src/lib/utils.ts": {
+    "mtime": 1791309989.533758,
+    "seen": 1792227606.9819236,
+    "ast_hash": "8595c2f874aa1ff8c7cc28df2999f354",
+    "semantic_hash": "8595c2f874aa1ff8c7cc28df2999f354"
+  },
+  "healthnode-frontend/src/lib/vitals.ts": {
+    "mtime": 1792222866.5934992,
+    "seen": 1792227606.981925,
+    "ast_hash": "0b73eabde6e5ef94623d86847464c0f8",
+    "semantic_hash": "0b73eabde6e5ef94623d86847464c0f8"
+  },
+  "healthnode-frontend/src/services/api.ts": {
+    "mtime": 1792225740.866509,
+    "seen": 1792227606.9819267,
+    "ast_hash": "70ff3b15bf4a1d8b259fe486c75d72de",
+    "semantic_hash": "70ff3b15bf4a1d8b259fe486c75d72de"
+  },
+  "healthnode-frontend/src/store/auth-store.ts": {
+    "mtime": 1792173011.158555,
+    "seen": 1792227606.981928,
+    "ast_hash": "cb5bbba6966d39d934a9cd902e8e89eb",
+    "semantic_hash": "cb5bbba6966d39d934a9cd902e8e89eb"
+  },
+  "healthnode-frontend/src/store/theme-store.ts": {
+    "mtime": 1791461266.6153708,
+    "seen": 1792227606.9819298,
+    "ast_hash": "011acd550ae15e5a9d990bd5878acb7c",
+    "semantic_hash": "011acd550ae15e5a9d990bd5878acb7c"
+  },
+  "healthnode-frontend/src/store/toast-store.ts": {
+    "mtime": 1792223069.512552,
+    "seen": 1792227606.9819312,
+    "ast_hash": "1feb007ed7418c585f1942db6a961053",
+    "semantic_hash": "1feb007ed7418c585f1942db6a961053"
+  },
+  "healthnode-frontend/src/types/ai.ts": {
+    "mtime": 1792180460.8740458,
+    "seen": 1792227606.9819326,
+    "ast_hash": "5ac98d50d0be79c3e3cf585c113f25fc",
+    "semantic_hash": "5ac98d50d0be79c3e3cf585c113f25fc"
+  },
+  "healthnode-frontend/src/types/appointment.ts": {
+    "mtime": 1792153053.5904863,
+    "seen": 1792227606.981934,
+    "ast_hash": "979e2353b9a90b9af8cb65d845d91aa9",
+    "semantic_hash": "979e2353b9a90b9af8cb65d845d91aa9"
+  },
+  "healthnode-frontend/src/types/auth.ts": {
+    "mtime": 1792153286.7690303,
+    "seen": 1792227606.9819355,
+    "ast_hash": "382b3a9d9c617407ab572b01c120e530",
+    "semantic_hash": "382b3a9d9c617407ab572b01c120e530"
+  },
+  "healthnode-frontend/src/types/billing.ts": {
+    "mtime": 1792153086.7525935,
+    "seen": 1792227606.9819372,
+    "ast_hash": "9d979a2ddb882ccd99f34141568499be",
+    "semantic_hash": "9d979a2ddb882ccd99f34141568499be"
+  },
+  "healthnode-frontend/src/types/doctor.ts": {
+    "mtime": 1792153153.3385472,
+    "seen": 1792227606.9819388,
+    "ast_hash": "413a62faf210c7c102a975538c9e7841",
+    "semantic_hash": "413a62faf210c7c102a975538c9e7841"
+  },
+  "healthnode-frontend/src/types/index.ts": {
+    "mtime": 1792180220.000504,
+    "seen": 1792227606.9819405,
+    "ast_hash": "212903b85b878f59a8ce64bfd0dd21c6",
+    "semantic_hash": "212903b85b878f59a8ce64bfd0dd21c6"
+  },
+  "healthnode-frontend/src/types/medicine.ts": {
+    "mtime": 1792174804.9588249,
+    "seen": 1792227606.981942,
+    "ast_hash": "39197949ab606983a673f45b21d523b1",
+    "semantic_hash": "39197949ab606983a673f45b21d523b1"
+  },
+  "healthnode-frontend/src/types/nurse.ts": {
+    "mtime": 1792174804.970792,
+    "seen": 1792227606.9819434,
+    "ast_hash": "d272570e0a091d725cb2aca5135d797d",
+    "semantic_hash": "d272570e0a091d725cb2aca5135d797d"
+  },
+  "healthnode-frontend/src/types/patient.ts": {
+    "mtime": 1792152031.0626895,
+    "seen": 1792227606.9819448,
+    "ast_hash": "a0c0f22311bcb9a23682cebf930ffd7c",
+    "semantic_hash": "a0c0f22311bcb9a23682cebf930ffd7c"
+  },
+  "healthnode-frontend/src/types/prescription.ts": {
+    "mtime": 1792174804.943696,
+    "seen": 1792227606.9819465,
+    "ast_hash": "c6dc20e899f9abd89835a559f8149623",
+    "semantic_hash": "c6dc20e899f9abd89835a559f8149623"
+  },
+  "healthnode-frontend/src/types/receptionist.ts": {
+    "mtime": 1792153200.5860655,
+    "seen": 1792227606.981948,
+    "ast_hash": "08d100d42d92f7544dd138385d06bbe3",
+    "semantic_hash": "08d100d42d92f7544dd138385d06bbe3"
+  },
+  "healthnode-frontend/src/types/user.ts": {
+    "mtime": 1792173011.0934432,
+    "seen": 1792227606.9819493,
+    "ast_hash": "1f59b49c05bf025191e1459f11d8f3c3",
+    "semantic_hash": "1f59b49c05bf025191e1459f11d8f3c3"
+  },
+  "healthnode-frontend/tsconfig.json": {
+    "mtime": 1791308268.659271,
+    "seen": 1792227606.981951,
+    "ast_hash": "ee17fd1c97c735e9f3564e3f5251f125",
+    "semantic_hash": "ee17fd1c97c735e9f3564e3f5251f125"
+  }
+}
